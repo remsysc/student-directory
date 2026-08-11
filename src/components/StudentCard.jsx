@@ -4,9 +4,12 @@ export default function StudentCard({ student }) {
   const isProbation = student.status === 'On Probation';
   const isDeansLister = student.gwa <= 1.75;
 
-  const cardClass = isProbation
-    ? `${styles.card} ${styles.probation}`
-    : styles.card;
+  let cardClass = styles.card;
+  if (isProbation) {
+    cardClass += ` ${styles.probation}`;
+  } else if (isDeansLister) {
+    cardClass += ` ${styles.deansLister}`;
+  }
 
   return (
     <div className={cardClass}>
