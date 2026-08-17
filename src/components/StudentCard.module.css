@@ -10,12 +10,14 @@
 
 .probation {
     border: 2px solid #e53935;
-    background: #6e3fce;
-    color: #ffff;
+    background: #3b1a6e;
+    color: #fff;
 }
 
 .deansLister {
     border: 2px solid #4caf50;
+    background: #1a2e1a;
+    color: #fff;
 }
 
 .badge {
